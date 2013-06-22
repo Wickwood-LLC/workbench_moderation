@@ -349,13 +349,6 @@ function workbench_moderation_admin_paths() {
   if (variable_get('node_admin_theme')) {
     $paths = array(
       'node/*/moderation' => TRUE,
-      'node/*/moderation/*/unpublish' => TRUE,
-      'node/*/moderation/*/change-state/*' => TRUE,
-      'node/*/moderation/view' => TRUE,
-      'node/*/moderation/diff' => TRUE,
-      'node/*/moderation/diff/list' => TRUE,
-      'node/*/moderation/diff/view' => TRUE,
-      'node/*/moderation/diff/view/*/*' => TRUE,
     );
     return $paths;
   }
