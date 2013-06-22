@@ -424,6 +424,15 @@ function workbench_moderation_permission() {
       }
     }
   }
+  
+  // Per-node-type view unpublished content
+  foreach ($node_types as $node_type) {
+    $permissions["view unpublished $node_type"] = array(
+          'title' => t('View unpublished %node_type', array('%node_type' => node_type_get_name($node_type), )),
+		);
+  }
+        
+        
   return $permissions;
 }
 
