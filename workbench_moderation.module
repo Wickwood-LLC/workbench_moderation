@@ -384,9 +384,7 @@ function workbench_moderation_theme() {
  */
 function workbench_moderation_permission() {
   $permissions = array();
-  $permissions['view all unpublished content'] = array(
-    'title' => t('View all unpublished content'),
-  );
+  
   $permissions['administer workbench moderation'] = array(
     'title' => t('Administer Workbench Moderation'),
   );
@@ -432,14 +430,18 @@ function workbench_moderation_permission() {
     }
   }
   
+  // Set permission for privledeged users to view all unpublished content
+  $permissions['view all unpublished content'] = array(
+    'title' => t('View all unpublished content'),
+  );
+  
   // Per-node-type view unpublished content
   foreach ($node_types as $node_type) {
     $permissions["view all unpublished $node_type"] = array(
           'title' => t('View all unpublished %node_type', array('%node_type' => node_type_get_name($node_type), )),
 		);
   }
-        
-        
+          
   return $permissions;
 }
 
