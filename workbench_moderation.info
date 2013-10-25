@@ -1,7 +1,8 @@
 name = Workbench Moderation
-description = Provides content moderation services
+description = Provides content moderation services. WWM applied patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 'Workbench moderation: current' views filter does not list all content when a draft or needs review revision exists after a published revision. 
 package = Workbench
 core = 7.x
+version = 1.x-dev-wwm
 
 configure = admin/config/workbench/moderation
 
