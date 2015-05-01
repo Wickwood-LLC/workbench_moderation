@@ -1,5 +1,5 @@
 name = Workbench Moderation
-description = Provides content moderation services. Modified by WWM to limit viewing of unpubished nodes by content type.Provides content moderation services and applied patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 'Workbench moderation: current' views filter does not list all content when a draft or needs review revision exists after a published revision. 
+description = Provides content moderation services. Modified by WWM to limit viewing of unpubished nodes by content type.Provides content moderation services and applied patches from https://www.drupal.org/node/1361210#comment-9009313 to fix issue with 'Workbench moderation: current' views filter does not list all content when a draft or needs review revision exists after a published revision and patch https://drupal.org/node/1447886#comment-7570151 to provide permissions for limit viewing of unpubished nodes by content type. 
 package = Workbench
 core = 7.x
 version = 1.x-dev-wwm
