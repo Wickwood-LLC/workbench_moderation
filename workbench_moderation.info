@@ -1,5 +1,5 @@
 name = Workbench Moderation
-description = Provides content moderation services
+description = Provides content moderation services. Modified by WWM to limit viewing of unpubished nodes by content type. Includes patch from ttps://drupal.org/node/1447886#comment-7570151 to provide permissions for limit viewing of unpubished nodes by content type.
 package = Workbench
 core = 7.x
 
@@ -21,3 +21,6 @@ files[] = tests/workbench_moderation.node_access.test
 files[] = tests/workbench_moderation.transition.test
 
 dependencies[] = drafty
+
+version = "7.x-3.0"
+project = "workbench_moderation"
